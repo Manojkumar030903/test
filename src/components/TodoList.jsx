@@ -26,6 +26,7 @@ export default function TodoList() {
     <div>
       <h2>Todo List</h2>
       <input
+      id='new-todo'
         placeholder="Add a new task"
         value={newTodo}
         onChange={e => setNewTodo(e.target.value)}

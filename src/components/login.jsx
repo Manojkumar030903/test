@@ -17,18 +17,19 @@ export default function Login({ onLogin }) {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Login</h2>
-      <input
+      <input id='username'
         placeholder="Username"
         value={username}
         onChange={e => setUsername(e.target.value)}
       />
       <input
+      id='password'
         placeholder="Password"
         type="password"
         value={password}
         onChange={e => setPassword(e.target.value)}
       />
-      <button type="submit">Login</button>
+      <button name='login' type="submit">Login</button>
     </form>
   );
 }
